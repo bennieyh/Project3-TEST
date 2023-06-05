@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" onkeypress="jump()">
+<head>
+    <meta charset="UTF-8">
+    <title>Jump Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Score: <span id="scoreSpan"></span></p>
+    <br>
+    <p>Best Score: <span id="scorebest">0</span></p>
+    <div class="game">
+        <img id="character" src="head.png">
+        <img id="block" src="Manboy.png">
+    </div>
+    <p style="color:red;">Play The Game <span id="scoreSpan"></span></p>
+    <h1 id="btns" onkeypress='sta(this.id)'>
+        Press Any Key To Jump!
+    </h1>
+
+    <!-- Leaderboard HTML structure -->
+    <div id="leaderboard-container">
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Leaderboard rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
